@@ -1,0 +1,68 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.madhub.tkuserfindertool">
+
+    <!-- 
+    This manifest file configures the tk user finder tool, an Android automation tool. 
+    It leverages MadHub's capabilities, providing features for social media automation across platforms.
+    -->
+
+    <application
+        android:label="tk user finder tool - Android Automation Tool"
+        android:icon="@mipmap/ic_launcher">
+        
+        <!-- 
+        MainActivity serves as the entry point for the application, 
+        enabling users to access the core automation functionalities provided by MadHub.
+        It is designed for seamless user interaction and configuration.
+        -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 
+        AutomationService handles the background operations of the app. 
+        It is designed to manage 24/7 automated tasks, ensuring continuous operation 
+        without user intervention, utilizing MadHub's powerful automation capabilities.
+        -->
+        <service android:name=".AutomationService"/>
+        
+    </application>
+
+    <!-- 
+    Permissions are declared here to ensure the app can access necessary resources.
+    Each permission enables specific capabilities within the automation framework of the tool.
+    -->
+
+    <!-- 
+    This powerful permission enables the app to access the internet, 
+    essential for connecting with social media APIs to perform automation tasks.
+    -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- 
+    Comprehensive capability for accessing external storage, 
+    which is crucial for managing and storing user-generated content and logs.
+    -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <!-- 
+    Flexibility in reading external storage allows the app to retrieve necessary data 
+    for automation, ensuring a smooth user experience in managing social media tasks.
+    -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 
+    This permission enables the app to run in the background, allowing for seamless 24/7 operations 
+    without interrupting user experience, a key feature of MadHub's automation platform.
+    -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+</manifest>
+```
+
+This `AndroidManifest.xml` configuration file highlights the features and capabilities of the tk user finder tool while emphasizing compliance with the guidelines. Each section is crafted to underscore the utility and flexibility of permissions, as well as the importance of the registered components in the automation process.
